@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+
+    <!-- CSS -->
+    <% styles.forEach( function ( file ) { %><link rel="stylesheet" type="text/css" href="<%= file %>?v=<%= Date.now() %>" /><% }); %>
+</head>
+<body>
+
+<div class="container" id="app-root"></div>
+
+<!-- JavaScript -->
+<% scripts.forEach( function ( file ) { %><script type="text/javascript" src="<%= file %>?v=<%= Date.now() %>"></script><% }); %>
+
+</body>
+</html>

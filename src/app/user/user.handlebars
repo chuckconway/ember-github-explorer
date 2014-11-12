@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-3">
+        <div class="well">
+            <p class="text-center">
+                {{#link-to 'user' this}} <img {{bind-attr src=avatar_url}} style="width:140px;" />{{/link-to}}
+            </p>
+            <h4>{{#link-to 'user' this}}{{name}}{{/link-to}}</h4>
+            <p>
+                {{company}} <br/>
+                {{location}} <br/>
+                {{email}} <br/>
+
+            </p>
+            <hr/>
+            <table class="table table-striped">
+                <tr>
+                    <td>Followers:</td><td>{{followers}}</td>
+                </tr>
+                <tr><td>Repositories:</td><td>{{public_repos}}</td></tr>
+                <tr><td>Gists: </td><td>{{public_gists}}</td></tr>
+            </table>
+            <p>
+                {{#link-to "index"}}Back{{/link-to}}
+            </p>
+        </div>
+    </div>
+    <div class="col-md-8">
+        {{outlet}}
+    </div>
+</div>

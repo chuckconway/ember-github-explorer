@@ -1,0 +1,25 @@
+{
+  "author": "Chuck Conway",
+  "name": "ember-spa",
+  "version": "0.1.0",
+  "homepage": "https://github.com/chuckconway/ng-foundation",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/chuckconway/ng-foundation/master/LICENSE"
+  },
+  "devDependencies": {
+    "ember-template-compiler": "^1.8.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-conventional-changelog": "^1.1.0",
+    "grunt-ember-templates": "^0.4.23",
+    "grunt-wrap": "^0.3.0",
+    "handlebars": "^1.3.0",
+    "lodash": "^2.4.1"
+  }
+}

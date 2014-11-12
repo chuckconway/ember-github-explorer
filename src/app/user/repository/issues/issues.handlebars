@@ -1,0 +1,11 @@
+<h1>Issues</h1>
+
+<table class="table table-striped">
+    {{#each}}
+        <tr>
+            <td><img {{bind-attr src=user.avatar_url}} alt=""/></td>
+            <td>{{title}}</td>
+            <td>{{created_at}}</td>
+        </tr>
+    {{/each}}
+</table>

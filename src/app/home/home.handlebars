@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md 12" >
+        <p>This is the momntz starting page.</p>
+
+        <ul>
+            {{#each}}
+                <li>{{#link-to 'user' this.login}}{{name}}{{/link-to}}</li>
+            {{/each}}
+        </ul>
+
+        <button class="btn btn-success" {{action "clicked"}}>Click Me!</button>
+
+        <p>{{renderedOn}}</p>
+
+    </div>
+</div>
