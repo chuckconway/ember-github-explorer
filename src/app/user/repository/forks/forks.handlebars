@@ -1,1 +1,15 @@
-<h1>Issues</h1>
+<h1>Forks</h1>
+
+<table class="table table-striped">
+    {{#each}}
+        <tr>
+            <td><img {{bind-attr src=owner.avatar_url}} alt=""/></td>
+            <td>{{full_name}}</td>
+            <td>{{created_at}}</td>
+        </tr>
+    {{else}}
+        <td>
+            <p class="text-muted">No forks.</p>
+        </td>
+    {{/each}}
+</table>

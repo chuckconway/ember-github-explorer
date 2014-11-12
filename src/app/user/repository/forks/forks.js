@@ -1,17 +1,9 @@
-App.RepositoryRoute = Ember.Route.extend({
+App.ForksRoute = Ember.Route.extend({
     model:function(params){
-        var user = this.modelFor("user");
-
-        //build the url of the repo call manually
-        var url = "https://api.github.com/repos/" + user.login + "/" + params.reponame;
-        return Ember.$.getJSON(url);
+        var repo = this.modelFor("repository");
+        return Ember.$.getJSON(repo.forks_url);
     },
     renderTemplate:function(){
-       return this.render('src/app/user/repository/issues/issues');
+        return this.render('src/app/user/repository/forks/forks');
     }
-});
-
-App.RepositoryController = Ember.ObjectController.extend({
-    needs:["user"],
-    user: Ember.computed.alias("controllers.user")
 });

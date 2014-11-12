@@ -5,6 +5,7 @@
     "ember": "~1.8.0",
     "ember-data": "1.0.0-beta.11",
     "bootstrap": "~3.3.0",
-    "jquery":"2.1.1"
+    "jquery": "2.1.1",
+    "momentjs": "~2.8.3"
   }
 }

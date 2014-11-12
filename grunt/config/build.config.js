@@ -61,7 +61,8 @@ module.exports = {
       'dependencies/jquery/dist/jquery.js',
       'dependencies/handlebars/handlebars.js',
       'dependencies/ember/ember.js',
-      'dependencies/ember-data/ember-data.js'
+      'dependencies/ember-data/ember-data.js',
+      'dependencies/momentjs/moment.js'
     ],
       artifacts:[
           'dependencies/**/fonts/**',

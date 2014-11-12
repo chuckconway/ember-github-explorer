@@ -7,5 +7,9 @@
             <td>{{title}}</td>
             <td>{{created_at}}</td>
         </tr>
+    {{else}}
+        <td>
+            <p class="text-muted">No issues found.</p>
+        </td>
     {{/each}}
 </table>

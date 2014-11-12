@@ -17,10 +17,15 @@
 </ul>
 <hr/>
 
+{{#unless forked}}
+
 <ul class="list-style-none">
     <li>{{#link-to 'issues'}}Issues{{/link-to}}</li>
     <li>{{#link-to 'forks'}}Forks{{/link-to}}</li>
     <li>{{#link-to 'commits'}}Commits{{/link-to}}</li>
 </ul>
+{{else}}
+    <p class="text-muted">Forked {{fromDate created_at}}</p>
+{{/unless}}
 
 {{outlet}}
