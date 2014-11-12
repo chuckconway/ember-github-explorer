@@ -5,6 +5,8 @@ App.Router.map(function(){
            this.resource("issues");
            this.resource("forks");
            this.resource("commits");
+
+           this.route("newissue"); // doing an action
        });
    });
 });
