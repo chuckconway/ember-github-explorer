@@ -1,12 +1,12 @@
 App.Router.map(function(){
    this.resource("user", {path:"/users/:login"}, function(){
         this.resource("repositories");
-       this.resource("repository", {path: "repositories/:reponame"}, function(){
+        this.resource("repository", {path: "repositories/:reponame"}, function(){
            this.resource("issues");
            this.resource("forks");
-           this.resource("commits");
+           this.resource("commits"); //is thing.
 
-           this.route("newissue"); // doing an action
+           this.route("newissue"); //doing an action
        });
    });
 });

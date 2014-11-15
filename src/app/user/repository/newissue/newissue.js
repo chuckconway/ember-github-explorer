@@ -1,11 +1,10 @@
-App.RepositoryNewissueController= Ember.Controller.extend({
+App.RepositoryNewissueController = Ember.Controller.extend({
     needs:["repository"],
     repo:Ember.computed.alias("controllers.repository"),
     issue:function(){
        return App.Issue.create()
     }.property("repo.model"),
     actions:{
-
         submitIssue:function(){
             //var title = $('#new-issue-title').val();
             //var body = $('#new-issue-body').val();
@@ -23,8 +22,7 @@ App.RepositoryNewissueController= Ember.Controller.extend({
 
             var issue = this.get("issue");
 
-            console.log(issue.get('title') + 'property');
-
+            console.log(issue.get('title') + ' property');
             console.log("ISsue Saved");
 
             this.set("issue", App.Issue.creat());

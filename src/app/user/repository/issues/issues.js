@@ -1,6 +1,5 @@
 App.IssuesRoute = Ember.Route.extend({
     model:function(params){
-
         var repo = this.modelFor("repository");
         var url = repo.issues_url.replace("{/number}", "");
 
